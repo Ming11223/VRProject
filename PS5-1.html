@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS5 Black</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+</head>
+<body>
+    <header class="text-center">
+        <h1>PS5 Black</h1>
+        <nav>
+            <a href="HomePage.html" class="text-white mx-2">Home</a>
+        </nav>
+    </header>
+    
+    <main class="container mt-5">
+        <h2 class="text-center">PS5 Black</h2>
+        <div class="text-center">
+            <p>A sleek and stylish PS5 console with a black finish. Perfect for gamers who love a modern and bold look.</p>
+            <div class="Sirv" data-src="https://mizzuddin057.sirv.com/Assignment%202/20241113164623/20241113164623.spin"></div>
+            <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+            <h3 class="font-weight-bold mt-3">$499.99</h3>
+            <button class="btn btn-primary" onclick="addToCart('PS5 Black', 499.99)">Add to Cart</button>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <p>&copy; 2024 PS5 Store. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(product, price) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ product, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(`${product} has been added to your cart!`);
+        }
+    </script>
+</body>
+</html>
